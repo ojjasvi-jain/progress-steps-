@@ -71,3 +71,12 @@ button {
 button:disabled {
   background-color: rgb(149, 144, 144);
 }
+
+.smile {
+  position: absolute;
+  width: 50px;
+  z-index: 3;
+  top: -10px;
+  left: 0;
+  transition: 1s linear;
+}
