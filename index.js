@@ -27,17 +27,9 @@ const updates = () => {
 
   let activeButton = document.querySelectorAll(".active").length;
 
-  smile.style.left =
-    ((activeButton - 1) / (circles.length - 1)) * 100 -
-    3 * (activeButton - 1) +
-    "%";
-
   progress.style.width =
     ((activeButton - 1) / (circles.length - 1)) * 100 + "%";
-  console.log(
-    ((activeButton - 1) / (circles.length - 1)) * 100 - 2 * (activeButton - 1)
-  );
-  console.dir(smile);
+
   if (activeButton === circles.length) nextButton.disabled = true;
   else if (activeButton === 1) {
     prevButton.disabled = true;
